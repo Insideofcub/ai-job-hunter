@@ -1,0 +1,40 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local data and personal information
+data/
+*.db
+*.sqlite
+*.sqlite3
+uploads/
+resumes/
+applications-private/
+
+# Node
+node_modules/
+dist/
+frontend/.vite/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Uploaded personal resumes (never publish these)
+/backend/data/resumes/

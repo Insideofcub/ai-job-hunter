@@ -1,0 +1,3 @@
+# Optional multi-portal discovery connector; install only when intentionally enabling JobSpy.
+# JobSpy is MIT-licensed; each job portal still has its own terms and restrictions.
+python-jobspy>=1.3.0,<2.0
