@@ -413,3 +413,17 @@ To update an existing local installation, back up the project, extract the relea
 
 - Isolates pytest against a temporary SQLite database so tests never mutate a developer's local application database.
 - Reports JobSpy as operationally disabled unless both its saved source toggle and `JOBSPY_ENABLED=true` are enabled.
+
+## Quick start on Windows
+
+New to the project? See the [Windows quick-start guide](docs/windows-quick-start.md).
+
+From PowerShell at the repository root, run:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\scripts\setup_windows.ps1
+.\scripts\start_windows.ps1
+```
+
+Setup preserves existing `.env` files and local data, installs dependencies, and builds the frontend. The launcher starts the backend and frontend in separate PowerShell windows and opens the local app at `http://127.0.0.1:5173`.
